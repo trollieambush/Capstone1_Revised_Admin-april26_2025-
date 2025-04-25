@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - User Management</title>
+  <link rel="stylesheet" href="UserManagement.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="side-menu">
+    <div class="admin">
+      <i class="fa-solid fa-user-shield"></i>
+      <span>Admin</span>
+  </div>
+  <ul>
+    <li><a href="AdminDashboard.html"><i class="fa-solid fa-gauge Dash"></i> Dashboard</a></li>
+    <li><a href="UserManagement.html"><i class="fa-solid fa-users"></i> User Management</a></li>
+    <li><a href="ModuleManagement.html"><i class="fa-solid fa-book"></i> Module Management</a></li>
+    <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+  </ul>
+  <div class="logout">
+    <a href="login.html">
+      <i class="fa-solid fa-right-from-bracket"></i> Logout
+    </a>
+  </div>
+  </div>
+
+  <main class="user-management-content">
+    <div class="controls-area">
+      <div class="search-container">
+        <input type="text" placeholder="Enter Name/ID" class="search-input">
+        <button class="search-button"><i class="fa-solid fa-search"></i></button>
+      </div>
+       <div class="filter-buttons">
+         <span>Filter by:</span>
+         <button class="filter-btn">Name (A-Z)</button>
+         <button class="filter-btn" id="role-filter-btn">Filter Role: All</button>
+       </div>
+     </div>
+
+    <div class="user-table-container">
+      <table class="user-table">
+        <thead>
+          <tr>
+            <th>UserID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Role</th>
+            <th>Select</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td><a href="#">0001</a></td>
+            <td>Yvan Bernaldez</td>
+            <td>YvanBernaldez@CAES.edu.ph</td>
+            <td>Bernaldez123</td>
+            <td>Admin</td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td><a href="#">0002</a></td>
+            <td>Jhezthony Rei Gutierrez</td>
+            <td>jhezthonygutierez@CAES.edu.ph</td>
+            <td>Gutierrez123</td>
+            <td>Student</td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td><a href="#">0003</a></td>
+            <td>Kenneth John Daaco</td>
+            <td>JKDaaco@CAES.edu.ph</td>
+            <td>Daaco123</td>
+            <td>Student</td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td><a href="#">0004</a></td>
+            <td>Julius Valdez</td>
+            <td>JuliusValdez@CAES.edu.ph</td>
+            <td>Valdez123</td>
+            <td>Admin</td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td><a href="#">0005</a></td>
+            <td>Juan Dela Cruz</td>
+            <td>JuanDelaCruz@CAES.edu.ph</td>
+            <td>DelaCruz123</td>
+            <td>Student</td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td><a href="#">0006</a></td>
+            <td>Marilou Panugaling</td>
+            <td>MarilouPanugaling@CAES.edu.ph</td>
+            <td>Panugaling231</td>
+            <td>Teacher</td>
+            <td><input type="checkbox"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="action-buttons">
+      <button class="action-btn add-user-btn">Add User</button>
+      <a href="EditUser.html" style="text-decoration: none;"><button class="action-btn edit-btn">Edit</button></a>
+    </div>
+  </main>
+
+  <script src="UserManagement.js"></script>
+</body>
+</html>

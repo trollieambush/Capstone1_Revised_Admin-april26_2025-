@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - Add Lesson Material</title>
+  <link rel="stylesheet" href="ModuleManagement.css" /> 
+  <link rel="stylesheet" href="AddItem.css" /> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="side-menu">
+    <div class="admin">
+      <i class="fa-solid fa-user-shield"></i>
+      <span>Admin</span>
+    </div>
+    <ul>
+      <li><a href="AdminDashboard.html"><i class="fa-solid fa-gauge Dash"></i> Dashboard</a></li>
+      <li><a href="UserManagement.html"><i class="fa-solid fa-users"></i> User Management</a></li>
+      <li><a href="ModuleManagement.html"><i class="fa-solid fa-book"></i> Module Management</a></li>
+      <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+    </ul>
+    <div class="logout">
+      <a href="login.html">
+        <i class="fa-solid fa-right-from-bracket"></i> Logout
+      </a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="add-item-content">
+    <div class="back-btn-container">
+        <a href="ModuleManagement.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Add Item</a>
+    </div>
+
+    <div class="add-item-container">
+      <div class="add-item-header">
+        Add Lesson Material
+      </div>
+
+      <form>
+        <div class="form-section">
+           <div class="form-row">
+                <div class="form-group">
+                    <label for="fileType">File Type:</label>
+                    <select id="fileType" name="fileType">
+                        <option value="">(Select a file type)</option>
+                        <option value="pdf">PDF</option>
+                        <option value="mp4" selected>Video (mp4, avi, mov)</option> 
+                        <option value="pptx">PPTX</option>
+                        <option value="docx">DOCX</option>
+                        <option value="img">Image (png, jpg, jpeg)</option>
+                    </select>
+                </div>
+                 <div class="form-group">
+                    <label for="lessonId">Lesson ID:</label>
+                    <input type="text" id="lessonId" name="lessonId" placeholder="Enter Lesson ID">
+                </div>
+           </div>
+           <div class="form-row">
+                <div class="form-group">
+                    <label for="itemTitle">Title:</label>
+                    <input type="text" id="itemTitle" name="itemTitle" placeholder="Enter item title">
+                </div>
+           </div>
+          <div class="form-group">
+            <label>File:</label>
+            <div class="file-upload-area">
+              <i class="fa-solid fa-folder-open"></i>
+              <span>Insert or drag your file here</span>
+              <input type="file" style="display: none;"> <!-- Hidden file input -->
+            </div>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="save-changes-btn">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+</body>
+</html>

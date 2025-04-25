@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - Module Management</title>
+  <link rel="stylesheet" href="ModuleManagement.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="side-menu">
+    <div class="admin">
+      <i class="fa-solid fa-user-shield"></i>
+      <span>Admin</span>
+  </div>
+  <ul>
+    <li><a href="AdminDashboard.html"><i class="fa-solid fa-gauge Dash"></i> Dashboard</a></li>
+    <li><a href="UserManagement.html"><i class="fa-solid fa-users"></i> User Management</a></li>
+    <li><a href="ModuleManagement.html"><i class="fa-solid fa-book"></i> Module Management</a></li>
+    <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+  </ul>
+  <div class="logout">
+    <a href="login.html">
+      <i class="fa-solid fa-right-from-bracket"></i> Logout
+    </a>
+  </div>
+  </div>
+
+  <main class="module-management-content"> 
+    <div class="controls-area">
+      <div class="search-container">
+        <input type="text" placeholder="Enter Name" class="search-input">
+        <button class="search-button"><i class="fa-solid fa-search"></i></button>
+      </div>
+      <div class="filter-buttons">
+        <span>Filter by:</span>
+        <button class="filter-btn">Release Order</button>
+        <button class="filter-btn">All File Type</button>
+      </div>
+    </div>
+
+    <div class="module-table-container">
+      <table class="module-table">
+        <thead>
+          <tr>
+            <th>ItemID</th>
+            <th>Title</th>
+            <th>File Type</th>
+            <th>LessonID</th>
+            <th>Lesson Title</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#">00001</a></td>
+            <td>Lesson Overview 1</td>
+            <td>PDF</td>
+            <td><a href="#">01</a></td>
+            <td>The Basics</td>
+          </tr>
+          <tr>
+            <td><a href="#">00002</a></td>
+            <td>Online Video Material 1</td>
+            <td>mp4</td>
+            <td><a href="#">01</a></td>
+            <td>The Basics</td>
+          </tr>
+          <tr>
+            <td><a href="#">00003</a></td>
+            <td>Lesson Overview 2</td>
+            <td>PDF</td>
+            <td><a href="#">02</a></td>
+            <td>Alphabetical Cues</td>
+          </tr>
+          <tr>
+            <td><a href="#">00004</a></td>
+            <td>Online Presentation 2</td>
+            <td>pptx</td>
+            <td><a href="#">02</a></td>
+            <td>Alphabetical Cues</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+    <div class="action-buttons">
+      <button class="action-btn add-item-btn" id="addItemBtn">Add Item</button>
+      <button class="action-btn add-lesson-btn" id="addLessonBtn">Add Lesson</button>
+    </div>
+  </main>
+  <script src="ModuleManagement.js"></script> 
+</body>
+</html>
